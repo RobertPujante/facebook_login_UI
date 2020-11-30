@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif !important;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+body .container {
+  background-color: #f0f2f5;
+  width: 100vw;
+  height: 100vh;
+}
+
+body .container .container-content .header {
+  padding: 1.5rem;
+}
+
+body .container .container-content .header h1 {
+  font-weight: 500;
+  color: #333;
+}
+/*# sourceMappingURL=style.css.map */
