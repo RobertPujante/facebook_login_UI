@@ -28,19 +28,12 @@ body .container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
 }
 
 body .container .container-content {
-  background-color: #fff;
-  overflow: hidden;
-  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
-  border-radius: 0.75rem;
+  background-color: transparent;
   max-width: 100%;
-  -webkit-animation-name: grow;
-          animation-name: grow;
-  -webkit-animation-duration: 1.4s;
-          animation-duration: 1.4s;
 }
 
 body .container .container-content .auth-side {
@@ -74,94 +67,60 @@ body .container .container-content .auth-side .logo-brand .brand {
 }
 
 body .container .container-content .auth-side .login-form .input-group {
-  margin-bottom: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
   -webkit-animation-name: grow_right;
           animation-name: grow_right;
   -webkit-animation-duration: 1.4s;
           animation-duration: 1.4s;
+  margin-bottom: 1.5rem;
+}
+
+body .container .container-content .auth-side .login-form .input-group .feather {
+  width: 22px;
+  height: 22px;
+  position: relative;
+  top: 2.5px;
+  color: #777;
 }
 
 body .container .container-content .auth-side .login-form .input-group .form-control {
-  font-family: "Poppins", sans-serif;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   padding: 0.8rem;
+  font-family: "Poppins", sans-serif;
   font-size: 1em;
-  border: 1px solid #ddd;
   outline: none;
-  border-radius: 5px;
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
+  border: none;
+  background-color: transparent;
 }
 
-body .container .container-content .auth-side .login-form .input-group .form-control:focus-within {
+body .container .container-content .auth-side .login-form .input-group:focus-within {
   border: 1px solid #1877f28c;
   -webkit-box-shadow: 0px 0px 10px #1877f28c;
           box-shadow: 0px 0px 10px #1877f28c;
 }
 
-body .container .container-content .auth-side .login-form .input-group .invalid-feedback {
+body .container .container-content .auth-side .login-form .input-group:last-child {
+  margin-bottom: 0;
+}
+
+body .container .container-content .auth-side .login-form .invalid-feedback {
   margin-top: 3px;
   color: red;
   font-size: .9em;
-}
-
-body .container .container-content .auth-side .login-form .input-group .btn-login {
-  background-color: #1877f2;
-  -webkit-animation-name: grow_right;
-          animation-name: grow_right;
-  -webkit-animation-duration: 1.8s;
-          animation-duration: 1.8s;
-}
-
-body .container .container-content .auth-side .login-form .input-group .btn-login:hover {
-  background-color: #1877f2aa;
-}
-
-body .container .container-content .auth-side .login-form .input-group .btn-login:active {
-  background-color: #1877f2;
-  -webkit-box-shadow: 0px 0px 10px #1877f2;
-          box-shadow: 0px 0px 10px #1877f2;
-}
-
-body .container .container-content .auth-side .login-form .input-group .btn-create {
-  background-color: #42b72a;
-  -webkit-animation-name: grow_right;
-          animation-name: grow_right;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-}
-
-body .container .container-content .auth-side .login-form .input-group .btn-create:hover {
-  background-color: #42b72a8c;
-}
-
-body .container .container-content .auth-side .login-form .input-group .btn-create:active {
-  background-color: #42b72a;
-  -webkit-box-shadow: 0px 0px 10px #42b72a;
-          box-shadow: 0px 0px 10px #42b72a;
-}
-
-body .container .container-content .auth-side .login-form .input-group .btn-login, body .container .container-content .auth-side .login-form .input-group .btn-create {
-  padding: 0.8rem;
-  border: none;
-  outline: none;
-  color: #fff;
-  border-radius: 5px;
-  font-family: "Poppins", sans-serif;
-  font-size: 1em;
-  cursor: pointer;
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
-}
-
-body .container .container-content .auth-side .login-form .input-group:last-child {
-  margin-bottom: 0;
+  margin-bottom: 1.5rem;
 }
 
 body .container .container-content .auth-side .login-form .forgot-password {
@@ -169,8 +128,8 @@ body .container .container-content .auth-side .login-form .forgot-password {
   margin-bottom: 1.5rem;
   -webkit-animation-name: grow_right;
           animation-name: grow_right;
-  -webkit-animation-duration: 1.6s;
-          animation-duration: 1.6s;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
 }
 
 body .container .container-content .auth-side .login-form .forgot-password a {
@@ -191,9 +150,69 @@ body .container .container-content .auth-side .login-form .divider {
   margin-bottom: 1.5rem;
 }
 
+body .container .container-content .auth-side .login-form .btn-group {
+  margin-bottom: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .container .container-content .auth-side .login-form .btn-group .btn-login {
+  background-color: #1877f2;
+  -webkit-animation-name: grow_right;
+          animation-name: grow_right;
+  -webkit-animation-duration: 1.6s;
+          animation-duration: 1.6s;
+}
+
+body .container .container-content .auth-side .login-form .btn-group .btn-login:hover {
+  background-color: #1877f2aa;
+}
+
+body .container .container-content .auth-side .login-form .btn-group .btn-login:active {
+  background-color: #1877f2;
+  -webkit-box-shadow: 0px 0px 10px #1877f2;
+          box-shadow: 0px 0px 10px #1877f2;
+}
+
+body .container .container-content .auth-side .login-form .btn-group .btn-create {
+  background-color: #42b72a;
+  -webkit-animation-name: grow_right;
+          animation-name: grow_right;
+  -webkit-animation-duration: 1.7s;
+          animation-duration: 1.7s;
+}
+
+body .container .container-content .auth-side .login-form .btn-group .btn-create:hover {
+  background-color: #42b72a8c;
+}
+
+body .container .container-content .auth-side .login-form .btn-group .btn-create:active {
+  background-color: #42b72a;
+  -webkit-box-shadow: 0px 0px 10px #42b72a;
+          box-shadow: 0px 0px 10px #42b72a;
+}
+
+body .container .container-content .auth-side .login-form .btn-group .btn-login, body .container .container-content .auth-side .login-form .btn-group .btn-create {
+  padding: 0.8rem;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  cursor: pointer;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
 body .container .container-content .auth-side .bottom-text {
   font-size: .9em;
-  padding: 1.5rem;
+  padding: 0 1.5rem;
   text-align: center;
 }
 
@@ -266,4 +285,4 @@ body .container .invalid {
     opacity: 1;
   }
 }
-/*# sourceMappingURL=card.css.map */
+/*# sourceMappingURL=simple-with-icons.css.map */

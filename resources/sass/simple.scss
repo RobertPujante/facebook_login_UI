@@ -22,15 +22,11 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
     
         .container-content{
-            background-color: #fff;
-            overflow: hidden;
-            box-shadow: $shadow-sm;
-            border-radius: $radius;
+            background-color: transparent;
             max-width: 100%;
-            animation-name: grow;
-            animation-duration: 1.4s;
     
             .auth-side{
                 display: flex;
@@ -41,7 +37,6 @@ body{
                     text-align: center;
                     animation-name: grow;
                     animation-duration: 1.2s;
-                    // margin-bottom: $m;
 
                     h4{
                         color: #333;
@@ -73,7 +68,7 @@ body{
                             outline: none;
                             border-radius: 5px;
                             transition: all .4s ease;
-        
+
                             &:focus-within{
                                 border: 1px solid #1877f28c;
                                 box-shadow: 0px 0px 10px #1877f28c;
@@ -89,7 +84,7 @@ body{
                         .btn-login{
                             background-color: $primary;
                             animation-name: grow_right;
-                            animation-duration: 1.8s;
+                            animation-duration: 1.6s;
 
                             &:hover{
                                 background-color: $secondary;
@@ -104,7 +99,7 @@ body{
                         .btn-create{
                             background-color: $success;
                             animation-name: grow_right;
-                            animation-duration: 2s;
+                            animation-duration: 1.7s;
 
                             &:hover{
                                 background-color: #42b72a8c;
@@ -137,7 +132,7 @@ body{
                         text-align: left;
                         margin-bottom: $m;
                         animation-name: grow_right;
-                        animation-duration: 1.6s;
+                        animation-duration: 1.5s;
 
                         a{
                             text-decoration: none;

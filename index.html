@@ -7,6 +7,7 @@
 
     <!-- plugins -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/feather-icons/dist/feather.min.js"></script>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -22,9 +23,78 @@
     <div class="container">
         <div class="container-content">
             <div class="header">
-                <h1>Log In and Registration</h1>
+                <h2>Simply beautiful open source Log In User Interface</h2>
+                <a href="https://github.com/RobertPujante/facebook_login_UI" target="_blank" title="Check Repository" class="btn-github">
+                    <i data-feather="github"></i>
+                </a>
+            </div>
+            <div class="preview-container">
+                <!-- cards start here -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Simple Login</div>
+                        <div class="card-option">
+                            <a href="resources/views/simple.html" class="btn-preview" target="_blank">Preview</a>
+                        </div>
+                    </div>
+                    <div class="card-image-preview">
+                        <img src="resources/images/design/simple.PNG" alt="simple">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Card Login</div>
+                        <div class="card-option">
+                            <a href="resources/views/card.html" class="btn-preview" target="_blank">Preview</a>
+                        </div>
+                    </div>
+                    <div class="card-image-preview">
+                        <img src="resources/images/design/card.PNG" alt="simple">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Card With Background Login</div>
+                        <div class="card-option">
+                            <a href="resources/views/card-with-background.html" class="btn-preview" target="_blank">Preview</a>
+                        </div>
+                    </div>
+                    <div class="card-image-preview">
+                        <img src="resources/images/design/card-with-background.PNG" alt="simple">
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Split Screen Card Login</div>
+                        <div class="card-option">
+                            <a href="resources/views/split-screen-card.html" class="btn-preview" target="_blank">Preview</a>
+                        </div>
+                    </div>
+                    <div class="card-image-preview">
+                        <img src="resources/images/design/split-screen-card.PNG" alt="simple">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Split Screen Login</div>
+                        <div class="card-option">
+                            <a href="resources/views/split-screen.html" class="btn-preview" target="_blank">Preview</a>
+                        </div>
+                    </div>
+                    <div class="card-image-preview">
+                        <img src="resources/images/design/split-screen.PNG" alt="simple">
+                    </div>
+                </div>
+                <!-- ends here -->
             </div>
         </div>
     </div>
+    <script>
+        feather.replace();
+    </script>
 </body>
 </html>

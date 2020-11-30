@@ -21,7 +21,10 @@ body{
         width: 100vw;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: center;        
+        background: rgba(78, 84, 200, 1);
+        background: linear-gradient(to right, rgba(143, 148, 251, 0.8), rgba(78, 84, 200, 0.9)), url('../images/login/banner.jpg');
+        background-size: cover;
     
         .container-content{
             background-color: #fff;
