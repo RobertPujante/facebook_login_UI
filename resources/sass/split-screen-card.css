@@ -19,18 +19,35 @@ body .container {
   bottom: 0;
   background-color: #f0f2f5;
   width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body .container .container-content {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 40% 60%;
-      grid-template-columns: 40% 60%;
-  height: 100vh;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  background-color: #fff;
+  overflow: hidden;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 0.75rem;
+  max-width: 100%;
+  -webkit-animation-name: grow;
+          animation-name: grow;
+  -webkit-animation-duration: 1.4s;
+          animation-duration: 1.4s;
 }
 
 body .container .container-content .banner-side {
-  margin-right: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,6 +67,7 @@ body .container .container-content .banner-side {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   overflow: hidden;
+  padding: 1.5rem;
 }
 
 body .container .container-content .banner-side h1 {
@@ -66,16 +84,11 @@ body .container .container-content .auth-side {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 1.5rem;
 }
 
 body .container .container-content .auth-side .logo-brand {
@@ -84,20 +97,6 @@ body .container .container-content .auth-side .logo-brand {
           animation-name: grow;
   -webkit-animation-duration: 1.2s;
           animation-duration: 1.2s;
-}
-
-body .container .container-content .auth-side .login-form {
-  background-color: #fff;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
-  border-radius: 0.75rem;
-  width: 40%;
-  -webkit-animation-name: grow;
-          animation-name: grow;
-  -webkit-animation-duration: 1.4s;
-          animation-duration: 1.4s;
 }
 
 body .container .container-content .auth-side .login-form .input-group {
@@ -109,6 +108,10 @@ body .container .container-content .auth-side .login-form .input-group {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-animation-name: grow_right;
+          animation-name: grow_right;
+  -webkit-animation-duration: 1.4s;
+          animation-duration: 1.4s;
 }
 
 body .container .container-content .auth-side .login-form .input-group .form-control {
@@ -136,6 +139,10 @@ body .container .container-content .auth-side .login-form .input-group .invalid-
 
 body .container .container-content .auth-side .login-form .input-group .btn-login {
   background-color: #1877f2;
+  -webkit-animation-name: grow_right;
+          animation-name: grow_right;
+  -webkit-animation-duration: 1.8s;
+          animation-duration: 1.8s;
 }
 
 body .container .container-content .auth-side .login-form .input-group .btn-login:hover {
@@ -150,6 +157,10 @@ body .container .container-content .auth-side .login-form .input-group .btn-logi
 
 body .container .container-content .auth-side .login-form .input-group .btn-create {
   background-color: #42b72a;
+  -webkit-animation-name: grow_right;
+          animation-name: grow_right;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 body .container .container-content .auth-side .login-form .input-group .btn-create:hover {
@@ -182,6 +193,10 @@ body .container .container-content .auth-side .login-form .input-group:last-chil
 body .container .container-content .auth-side .login-form .forgot-password {
   text-align: left;
   margin-bottom: 1.5rem;
+  -webkit-animation-name: grow_right;
+          animation-name: grow_right;
+  -webkit-animation-duration: 1.6s;
+          animation-duration: 1.6s;
 }
 
 body .container .container-content .auth-side .login-form .forgot-password a {
@@ -204,10 +219,8 @@ body .container .container-content .auth-side .login-form .divider {
 
 body .container .container-content .auth-side .bottom-text {
   font-size: .9em;
-  -webkit-animation-name: grow;
-          animation-name: grow;
-  -webkit-animation-duration: 1.6s;
-          animation-duration: 1.6s;
+  padding: 1.5rem;
+  text-align: center;
 }
 
 body .container .container-content .auth-side .bottom-text .btn-create-page {
@@ -253,4 +266,30 @@ body .container .invalid {
     opacity: 1;
   }
 }
-/*# sourceMappingURL=split-screen.css.map */
+
+@-webkit-keyframes grow_right {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    opacity: .3;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes grow_right {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    opacity: .3;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=split-screen-card.css.map */

@@ -24,6 +24,8 @@ body{
         align-items: center;
     
         .container-content{
+            display: grid;
+            grid-template-columns: 50% 50%;
             background-color: #fff;
             overflow: hidden;
             box-shadow: $shadow-sm;
@@ -31,6 +33,31 @@ body{
             max-width: 100%;
             animation-name: grow;
             animation-duration: 1.4s;
+
+
+            .banner-side{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                background-image: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.8), rgba(0,0,0,0.7)), url('../images/login/banner.jpg');
+                background-size: cover;
+                background-position-x: 45%;
+                animation-name: grow;
+                animation-duration: 1s;
+                overflow: hidden;
+                padding: $p;
+
+                h1{
+                    color: #fff;
+                    text-shadow: 1px 3px 5px rgba(0,0,0,0.5);
+                    letter-spacing: .4px;
+                }
+
+                .brand{
+                    color: $primary !important;
+                }
+            }
     
             .auth-side{
                 display: flex;
@@ -41,18 +68,6 @@ body{
                     text-align: center;
                     animation-name: grow;
                     animation-duration: 1.2s;
-                    // margin-bottom: $m;
-
-                    h4{
-                        color: #333;
-                        letter-spacing: .4px;
-                        padding: 0 $p;
-                        font-weight: 500;
-                    }
-    
-                    .brand{
-                        color: $primary !important;
-                    }
                 }
 
                 .login-form{
