@@ -1,0 +1,23 @@
+{
+  "name": "login_ui",
+  "version": "1.0.0",
+  "description": "This is a Facebook login form in different approaches",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RobertPujante/login_UI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RobertPujante/login_UI/issues"
+  },
+  "homepage": "https://github.com/RobertPujante/login_UI#readme",
+  "dependencies": {
+    "feather-icons": "^4.28.0",
+    "jquery": "^3.5.1"
+  }
+}
