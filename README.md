@@ -1,6 +1,3 @@
-# facebook login UI
-This is a Facebook login form in different approaches
-
 ## Getting Started
 
 ### What to run or install
@@ -12,3 +9,4 @@ This is a Facebook login form in different approaches
 
 
 ### That's all the basics, but you can make it more amazing base on your preference. Thanks!
+### This is a login form in different approaches, facebook is just an example of the company that I'm using so feel free to customize yours.
