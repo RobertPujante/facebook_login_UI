@@ -1,9 +1,8 @@
 ## Overview
-#### This is a login form in different approaches, facebook is just an example of the company that I'm using so feel free to customize yours.
+- This is a simple login forms in different approach, facebook is just an example of the company that I'm using so feel free to customize yours.
 
 
 ## Getting Started
-
 ### What to run or install
 - npm install
 
@@ -12,8 +11,8 @@
 - CSS (Sass)
 - JS (jQuery)
 
-### User Interface
+### More Info
 - Every login user interface have their css file base on the name of html file
-- The JavaScript is used for just simple validation to input fields
+- The JS file is used for basic validation to input fields
 
-### That's all the basics, but you can make it more amazing base on your preference. Thanks!
+### That's all my friends, you can always make it more amazing base on your preference. Let's keep learning and coding!
