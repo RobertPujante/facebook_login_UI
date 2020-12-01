@@ -11,4 +11,4 @@ This is a Facebook login form in different approaches
 - The JavaScript is used for just simple validation to input fields
 
 
-### That's all the basics, but you can make it more amazing base on preference 
+### That's all the basics, but you can make it more amazing base on your preference. Thanks!
