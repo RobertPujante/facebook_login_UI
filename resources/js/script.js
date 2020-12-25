@@ -1,4 +1,4 @@
-$(document).ready(() => {
+$(document).ready(function() {
     $('#btn-login').on('click', () => {
         let inputsLength = $('.form-control').length;
 

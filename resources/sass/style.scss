@@ -11,6 +11,7 @@ html{
 
 body{
     font-family: $font !important;
+    // font-display: swap !important;
     transition: all .4s ease;
 
     .container{
@@ -21,18 +22,20 @@ body{
             .header{
                 padding: $p;
                 display: flex;
-                justify-content: space-between;
+                flex-direction: column;
                 align-items: center;
+                text-align: center;
 
-                h2{
-                    font-weight: 500;
+                h3{
+                    font-weight: 600;
                     color: #333;
                 }
 
                 .btn-github{
                     color: #fff;
                     padding: 10px;
-                    background-color: #000;
+                    margin-bottom: 10px;
+                    background-color: #333;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -67,24 +70,35 @@ body{
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
-                        padding: $p;
+                        padding: 15px;
                         background-color: #fff;
                         border: $border;
 
                         .card-title{
-                            font-size: 1.2em;
+                            font-size: 1em;
                             font-weight: 500;
                             color: #333;
                         }
 
                         .card-option{
                             .btn-preview{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+
+                                font-size: .9em;
                                 text-decoration: none;
                                 border-radius: 4px;
-                                padding: 10px 30px;
+                                padding: 5px 20px;
                                 background-color: $primary;
-                                color: #fff;
-                                transition: .4s ease;
+                                color: #eee;
+                                transition: all .4s ease;
+
+                                .icon{
+                                    margin-right: 5px;
+                                    position: relative;
+                                    top: 1.5px;
+                                }
 
                                 &:hover{
                                     background-color: $secondary;
@@ -97,6 +111,13 @@ body{
                         display: flex;
                         justify-content: center;
                         align-items: center;
+                        overflow: hidden;
+
+                        img{
+                            width: 100%;
+                            height: auto;
+                            object-fit: cover;
+                        }
                     }
                 }
             }
