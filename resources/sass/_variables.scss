@@ -12,6 +12,7 @@ $dropdown-shadow: 0 10px 40px 10px rgba(140,152,164,.175);
 $border: .0625rem solid rgba(231,234,243,.7);
 $radius: .75rem;
 
+// neumorphism
 $border-radius: 50px;
 $background: #eeeeee;
 $shadowActive: -7px -7px 20px 0px #fff9,
@@ -30,3 +31,7 @@ $shadowInactive: 0px 0px 0px 0px #fff9,
     inset -4px -4px 5px 0px #fff9,
     inset 7px 7px 20px 0px #0003,
     inset 4px 4px 5px 0px #0001 !important;
+
+// glass morphism
+$shadowGlass: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+$backgroundGlass: rgba(255, 255, 255, 0.40);
