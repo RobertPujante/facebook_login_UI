@@ -22,8 +22,9 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;        
-        background: url('../images/login/banner.jpg');
+        background-image: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.8), rgba(0,0,0,0.7)), url('../images/login/banner.jpg');
         background-size: cover;
+        background-position-x: 45%;
         background-position-y: 50%;
     
         .container-content{
@@ -73,9 +74,10 @@ body{
                             font-size: 1em;
                             outline: none;
                             border: none;
-                            backdrop-filter: blur(1px);
+                            backdrop-filter: blur(4px);
                             border-radius: 5px;
                             transition: all .4s ease;
+                            color: #ddd;
                         }
 
                         .invalid-feedback{
