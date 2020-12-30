@@ -23,7 +23,7 @@ body{
         justify-content: center;
         align-items: center;        
         background: rgba(78, 84, 200, 1);
-        background: linear-gradient(to right, rgba(143, 148, 251, 0.8), rgba(78, 84, 200, 0.9)), url('../images/login/banner.jpg');
+        background-image: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.8), rgba(0,0,0,0.7)), url('../images/login/banner.jpg');
         background-size: cover;
     
         .container-content{
