@@ -3,34 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simply beautiful open source Log In User Interface">
+    <meta http-equiv="Content-Security-Policy: script-src 'self' https://fonts.gstatic.com">
+
     <title>Index Page</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="resources/sass/style.css">
+    
+    <link rel="preload" href="plugins/jquery/dist/jquery.min.js" as="script">
+    <link rel="preload" href="plugins/feather-icons/dist/feather.min.js" as="script">
+    <link rel="preload" href="resources/js/script.js" as="script">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" as="style">
+    <link rel="preload" href="resources/sass/style.css" as="style">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="resources/sass/style.css">
+
+    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
 </head>
 <body>
     <div class="container">
         <div class="container-content">
+
             <div class="header">
-                <a href="https://github.com/RobertPujante/facebook_login_UI" rel="noopener" rel="noreferrer" target="_blank" title="Check Repository" class="btn-github">
+                <h1>Simple open source Login Form Design</h1>
+                <a href="https://github.com/robertsonmorales/login_forms" rel="noopener" target="_blank" title="Check Repository" class="btn-github">
                     <i data-feather="github"></i>
                 </a>
-                <h3>Simply beautiful open source Log In User Interface</h3>
             </div>
+
             <div class="preview-container">
                 <div class="card">
                     <div class="card-header">
                         <div class="card-title">Simple Login</div>
                         <div class="card-option">
-                            <a href="resources/views/simple.html" class="btn-preview" target="_blank">
-                                <span class="icon"><i data-feather="external-link"></i></span>
-                                <span>Preview</span>
+                            <a href="resources/views/simple.html" class="btn-preview" target="_blank">Preview</a>
+                            <a href="#code" class="btn-code">Code</a>
+                            <a href="#clipboard" class="btn-clipboard" title="Copy">
+                                <i data-feather="clipboard"></i>
                             </a>
                         </div>
                     </div>
                     <div class="card-image-preview">
                         <img src="resources/images/design/simple.JPG" alt="simple">
+                    </div>
+                    <div class="card-code-preview">
+                        <code>
+                            <div class="card-title">Simple Login</div>
+                        <div class="card-option">
+                            <a href="resources/views/simple.html" class="btn-preview" target="_blank">Preview</a>
+                            <a href="#code" class="btn-code">Code</a>
+                            <a href="#clipboard" class="btn-clipboard" title="Copy">
+                                <i data-feather="clipboard"></i>
+                            </a>
+                        </div>
+                        </code>
                     </div>
                 </div>
 
@@ -38,9 +65,10 @@
                     <div class="card-header">
                         <div class="card-title">Card Login</div>
                         <div class="card-option">
-                            <a href="resources/views/card.html" class="btn-preview" target="_blank">
-                                <span class="icon"><i data-feather="external-link"></i></span>
-                                <span>Preview</span>
+                            <a href="resources/views/card.html" class="btn-preview" target="_blank">Preview</a>
+                            <a href="#code" class="btn-code">Code</a>
+                            <a href="#clipboard" class="btn-clipboard" title="Copy">
+                                <i data-feather="clipboard"></i>
                             </a>
                         </div>
                     </div>
@@ -53,9 +81,10 @@
                     <div class="card-header">
                         <div class="card-title">Card With Background Login</div>
                         <div class="card-option">
-                            <a href="resources/views/card-with-background.html" class="btn-preview" target="_blank">
-                                <span class="icon"><i data-feather="external-link"></i></span>
-                                <span>Preview</span>
+                            <a href="resources/views/card-with-background.html" class="btn-preview" target="_blank">Preview</a>
+                            <a href="#code" class="btn-code">Code</a>
+                            <a href="#clipboard" class="btn-clipboard" title="Copy">
+                                <i data-feather="clipboard"></i>
                             </a>
                         </div>
                     </div>
@@ -68,9 +97,10 @@
                     <div class="card-header">
                         <div class="card-title">Split Screen Card Login</div>
                         <div class="card-option">
-                            <a href="resources/views/split-screen-card.html" class="btn-preview" target="_blank">
-                                <span class="icon"><i data-feather="external-link"></i></span>
-                                <span>Preview</span>
+                            <a href="resources/views/split-screen-card.html" class="btn-preview" target="_blank">Preview</a>
+                            <a href="#code" class="btn-code">Code</a>
+                            <a href="#clipboard" class="btn-clipboard" title="Copy">
+                                <i data-feather="clipboard"></i>
                             </a>
                         </div>
                     </div>
@@ -83,9 +113,10 @@
                     <div class="card-header">
                         <div class="card-title">Split Screen Login</div>
                         <div class="card-option">
-                            <a href="resources/views/split-screen.html" class="btn-preview" target="_blank">
-                                <span class="icon"><i data-feather="external-link"></i></span>
-                                <span>Preview</span>
+                            <a href="resources/views/split-screen.html" class="btn-preview" target="_blank">Preview</a>
+                            <a href="#code" class="btn-code">Code</a>
+                            <a href="#clipboard" class="btn-clipboard" title="Copy">
+                                <i data-feather="clipboard"></i>
                             </a>
                         </div>
                     </div>
@@ -98,9 +129,10 @@
                     <div class="card-header">
                         <div class="card-title">Neumorphism Login</div>
                         <div class="card-option">
-                            <a href="resources/views/neumorphism.html" class="btn-preview" target="_blank">
-                                <span class="icon"><i data-feather="external-link"></i></span>
-                                <span>Preview</span>
+                            <a href="resources/views/neumorphism.html" class="btn-preview" target="_blank">Preview</a>
+                            <a href="#code" class="btn-code">Code</a>
+                            <a href="#clipboard" class="btn-clipboard" title="Copy">
+                                <i data-feather="clipboard"></i>
                             </a>
                         </div>
                     </div>
@@ -109,7 +141,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <!-- <div class="card">
                     <div class="card-header">
                         <div class="card-title">Glass morphism Login</div>
                         <div class="card-option">
@@ -122,11 +154,13 @@
                     <div class="card-image-preview">
                         <img src="resources/images/design/glassmorphism.JPG" alt="glassmorphism">
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
-    <script src="node_modules/feather-icons/dist/feather.min.js"></script>
-    <script>feather.replace();</script>
+
+    <script defer src="plugins/feather-icons/dist/feather.min.js"></script>
+    <script defer src="plugins/jquery/dist/jquery.min.js"></script>
+    <script defer src="resources/js/script.js"></script>
 </body>
 </html>
