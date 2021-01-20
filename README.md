@@ -5,16 +5,23 @@
 
 
 ## Getting Started
-### What to run or install
-- npm install
 
-### Language Used
+### Built With
 - HTML
 - CSS (Sass)
-- JS (jQuery)
+- JS
+
+### Type of Login Design
+- Simple
+- Simple with Icons
+- Card
+- Card with Background
+- Split Screen Card
+- Split Full Screen
+- Neumorphism Effect
 
 ### More Info
-- Every login user interface have their css file base on the name of html file
-- The JS file is used for basic validation to input fields
+- Every login form design have their own CSS (Sass) file base on the name of html file 
+- Like this HTML File: <code>simple.html</code> and CSS FILE: <code>simple.scss</code>
 
 ### That's all my friends, you can always make it more amazing base on your preference. Let's keep learning and coding!

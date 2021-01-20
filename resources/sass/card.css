@@ -88,6 +88,12 @@ body .container .container-content .auth-side .login-form .input-group {
           animation-duration: 1.4s;
 }
 
+body .container .container-content .auth-side .login-form .input-group label {
+  font-size: .9em;
+  margin-bottom: 5px;
+  color: #777;
+}
+
 body .container .container-content .auth-side .login-form .input-group .form-control {
   font-family: "Poppins", sans-serif;
   padding: 0.8rem;

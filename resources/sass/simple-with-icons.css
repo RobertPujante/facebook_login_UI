@@ -66,7 +66,22 @@ body .container .container-content .auth-side .logo-brand .brand {
   color: #1877f2 !important;
 }
 
-body .container .container-content .auth-side .login-form .input-group {
+body .container .container-content .auth-side .login-form .row {
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  -webkit-animation-name: grow_right;
+          animation-name: grow_right;
+  -webkit-animation-duration: 1.4s;
+          animation-duration: 1.4s;
+}
+
+body .container .container-content .auth-side .login-form .row label {
+  font-size: .9em;
+  margin-bottom: 5px;
+  color: #777;
+}
+
+body .container .container-content .auth-side .login-form .row .input-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,16 +92,10 @@ body .container .container-content .auth-side .login-form .input-group {
   background-color: #fff;
   border-radius: 5px;
   border: 1px solid #ddd;
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
-  -webkit-animation-name: grow_right;
-          animation-name: grow_right;
-  -webkit-animation-duration: 1.4s;
-          animation-duration: 1.4s;
   margin-bottom: 1.5rem;
 }
 
-body .container .container-content .auth-side .login-form .input-group .feather {
+body .container .container-content .auth-side .login-form .row .input-group .feather {
   width: 22px;
   height: 22px;
   position: relative;
@@ -94,7 +103,7 @@ body .container .container-content .auth-side .login-form .input-group .feather 
   color: #777;
 }
 
-body .container .container-content .auth-side .login-form .input-group .form-control {
+body .container .container-content .auth-side .login-form .row .input-group .form-control {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -106,17 +115,17 @@ body .container .container-content .auth-side .login-form .input-group .form-con
   background-color: transparent;
 }
 
-body .container .container-content .auth-side .login-form .input-group:focus-within {
+body .container .container-content .auth-side .login-form .row .input-group:focus-within {
   border: 1px solid #1877f28c;
   -webkit-box-shadow: 0px 0px 10px #1877f28c;
           box-shadow: 0px 0px 10px #1877f28c;
 }
 
-body .container .container-content .auth-side .login-form .input-group:last-child {
+body .container .container-content .auth-side .login-form .row .input-group:last-child {
   margin-bottom: 0;
 }
 
-body .container .container-content .auth-side .login-form .invalid-feedback {
+body .container .container-content .auth-side .login-form .row .invalid-feedback {
   margin-top: 3px;
   color: red;
   font-size: .9em;
@@ -143,11 +152,15 @@ body .container .container-content .auth-side .login-form .forgot-password a:hov
 }
 
 body .container .container-content .auth-side .login-form .divider {
-  border: 1px solid #eee;
+  border: 1px solid #dedede;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 1.5rem;
+  -webkit-animation-name: grow_right;
+          animation-name: grow_right;
+  -webkit-animation-duration: 1.55s;
+          animation-duration: 1.55s;
 }
 
 body .container .container-content .auth-side .login-form .btn-group {

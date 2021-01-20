@@ -88,7 +88,7 @@ body .container .container-content .auth-side {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 1.5rem;
+  padding: 0 1.5rem;
 }
 
 body .container .container-content .auth-side .logo-brand {
@@ -112,6 +112,12 @@ body .container .container-content .auth-side .login-form .input-group {
           animation-name: grow_right;
   -webkit-animation-duration: 1.4s;
           animation-duration: 1.4s;
+}
+
+body .container .container-content .auth-side .login-form .input-group label {
+  font-size: .9em;
+  margin-bottom: 5px;
+  color: #777;
 }
 
 body .container .container-content .auth-side .login-form .input-group .form-control {
