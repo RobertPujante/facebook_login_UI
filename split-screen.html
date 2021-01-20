@@ -3,33 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facebook - Login or Sign Up</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../sass/glassmorphism.css">
+    <meta name="description" content="Simply beautiful open source Log In User Interface">
+
+    <title>Login - Split Screen</title>
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" as="style">
+    <link rel="preload" href="resources/sass/split-screen.css" as="style">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="resources/sass/split-screen.css">
 
-    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="../js/script.js"></script>
+    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
 </head>
 <body>
     <div class="container">
-        <div class="container-content">
+        <main class="container-content">
+
+            <div class="banner-side">
+                <h1>Connect with friends <br> and the world around you <br> on <span class="brand">Facebook</span>.</h1>
+            </div>
 
             <div class="auth-side">
                 <div class="logo-brand">
-                    <img src="../images/logo/facebook.svg" alt="facebook" width="300" id="logo">
-                    <!-- <h4>Connect with friends <br> and the world around you on <span class="brand">Facebook</span>.</h4> -->
+                    <img src="resources/images/logo/facebook.svg" alt="facebook" width="300" height="105" id="logo">
                 </div>
 
                 <form action="#" method="post" id="login-form" class="login-form">
                     <div class="input-group">
-                        <input type="text" name="email-or-phone" id="email-or-phone" class="form-control" placeholder="Email or Phone Number" autocomplete="off">
+                        <label for="email-or-phone">Email or Phone Number</label>
+                        <input type="text" name="email-or-phone" id="email-or-phone" class="form-control" autocomplete="off">
                         <span class="invalid-feedback hidden" id="error-email-or-phone">Email or Phone Number is required.</span>
                     </div>
     
                     <div class="input-group">
-                        <input type="password" name="password" id="password" class="form-control" placeholder="Password">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" class="form-control" autocomplete="current-password">
                         <span class="invalid-feedback hidden" id="error-password">Password is required.</span>
                     </div>
 
@@ -52,7 +61,7 @@
                 <p class="bottom-text"><a href="#" class="btn-create-page">Create a Page</a> for a celebrity, band or business.</p>
 
             </div>
-        </div>
+        </main>
     </div>
 </body>
 </html>

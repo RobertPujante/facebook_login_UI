@@ -22,14 +22,14 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;        
-        background-image: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.8), rgba(0,0,0,0.7)), url('../images/login/banner.jpg');
+        background-image: url('../images/login/banner.jpg');
         background-size: cover;
         background-position-x: 45%;
         background-position-y: 50%;
     
         .container-content{
             background: $backgroundGlass;
-            box-shadow: $shadowGlass;
+            
             backdrop-filter: blur(4px);
             border-radius: 10px;
             overflow: hidden;
@@ -66,6 +66,12 @@ body{
                         flex-direction: column;
                         animation-name: grow_right;
                         animation-duration: 1.4s;
+
+                        label{
+                            font-size: .9em;
+                            margin-bottom: 5px;
+                            color: #777;
+                        }
         
                         .form-control{
                             background: transparent;
@@ -87,7 +93,7 @@ body{
                         }
 
                         .btn-login{
-                            background-color: rgba( 24, 119, 242, 0.50 );
+                            background-color: $primary;
                             animation-name: grow_right;
                             animation-duration: 1.8s;
 
@@ -102,7 +108,7 @@ body{
                         }
 
                         .btn-create{
-                            background-color: rgba( 66, 183, 42, 0.50 );
+                            background-color: $success;
                             animation-name: grow_right;
                             animation-duration: 2s;
 

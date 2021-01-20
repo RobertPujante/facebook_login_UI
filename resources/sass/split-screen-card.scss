@@ -62,7 +62,7 @@ body{
             .auth-side{
                 display: flex;
                 flex-direction: column;
-                padding: $p;
+                padding: 0 $p;
 
                 .logo-brand{
                     text-align: center;
@@ -77,6 +77,12 @@ body{
                         flex-direction: column;
                         animation-name: grow_right;
                         animation-duration: 1.4s;
+
+                        label{
+                            font-size: .9em;
+                            margin-bottom: 5px;
+                            color: #777;
+                        }
         
                         .form-control{
                             font-family: $font;
