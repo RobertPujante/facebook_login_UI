@@ -1,17 +1,14 @@
-### login_forms_v2
+# Login Design
 
 ## Overview
 - This is a simple login forms in different approach, facebook is just an example of the company that I'm using so feel free to customize yours.
 
-
-## Getting Started
-
-### Built With
+## Built With
 - HTML
 - CSS (Sass)
 - JS
 
-### Type of Login Design
+## Type of Login Design
 - Simple
 - Simple with Icons
 - Card
@@ -20,7 +17,7 @@
 - Split Full Screen
 - Neumorphism Effect
 
-### More Info
+## More Info
 - Every login form design have their own CSS (Sass) file base on the name of html file 
 - Like this HTML File: <code>simple.html</code> and CSS FILE: <code>simple.scss</code>
 
