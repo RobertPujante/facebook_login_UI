@@ -196,4 +196,8 @@ body .container .container-content .preview-container .card .card-image-preview 
   -o-object-fit: cover;
      object-fit: cover;
 }
+
+body .container .container-content .preview-container .card .card-code-preview {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */
