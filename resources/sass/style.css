@@ -138,6 +138,9 @@ body .container .container-content .preview-container .card .card-header .card-o
   padding: 10px 15px;
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
+  background-color: transparent;
+  color: #1877f2;
+  margin-right: 5px;
 }
 
 body .container .container-content .preview-container .card .card-header .card-option .btn-preview .icon, body .container .container-content .preview-container .card .card-header .card-option .btn-code .icon {
@@ -149,18 +152,6 @@ body .container .container-content .preview-container .card .card-header .card-o
 body .container .container-content .preview-container .card .card-header .card-option .btn-preview:hover, body .container .container-content .preview-container .card .card-header .card-option .btn-code:hover {
   background-color: #1877f2aa;
   color: #fff;
-}
-
-body .container .container-content .preview-container .card .card-header .card-option .btn-preview {
-  background-color: #1877f2;
-  color: #fff;
-  margin-right: 5px;
-}
-
-body .container .container-content .preview-container .card .card-header .card-option .btn-code {
-  background-color: transparent;
-  color: #1877f2;
-  margin-right: 15px;
 }
 
 body .container .container-content .preview-container .card .card-header .card-option .btn-clipboard {
@@ -199,5 +190,18 @@ body .container .container-content .preview-container .card .card-image-preview 
 
 body .container .container-content .preview-container .card .card-code-preview {
   display: none;
+}
+
+body .container .container-content .preview-container .card .active {
+  background-color: #1877f2 !important;
+  color: #fff !important;
+}
+
+body .container .container-content .preview-container .card .show-code {
+  display: block !important;
+}
+
+body .container .container-content .preview-container .card .hide {
+  display: none !important;
 }
 /*# sourceMappingURL=style.css.map */

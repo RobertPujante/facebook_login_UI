@@ -97,6 +97,9 @@ body{
                                 border-radius: 4px;
                                 padding: 10px 15px;
                                 transition: all .4s ease;
+                                background-color: transparent;
+                                color: $primary;
+                                margin-right: 5px;
 
                                 .icon{
                                     margin-right: 5px;
@@ -108,18 +111,6 @@ body{
                                     background-color: $secondary;
                                     color: #fff;
                                 }
-                            }
-
-                            .btn-preview{
-                                background-color: $primary;
-                                color: #fff;
-                                margin-right: 5px;
-                            }
-
-                            .btn-code{
-                                background-color: transparent;
-                                color: $primary;
-                                margin-right: 15px;
                             }
 
                             .btn-clipboard{
@@ -147,6 +138,19 @@ body{
 
                     .card-code-preview{
                         display: none;
+                    }
+
+                    .active{
+                        background-color: $primary !important;
+                        color: #fff !important;
+                    }
+
+                    .show-code{
+                        display: block !important;
+                    }
+
+                    .hide{
+                        display: none !important;
                     }
                 }
             }
