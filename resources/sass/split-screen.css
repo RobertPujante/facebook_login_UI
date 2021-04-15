@@ -119,7 +119,7 @@ body .container .container-content .auth-side .login-form .input-group label {
 
 body .container .container-content .auth-side .login-form .input-group .form-control {
   font-family: "Poppins", sans-serif;
-  padding: 0.8rem;
+  padding: 0.6rem;
   font-size: 1em;
   border: 1px solid #ddd;
   outline: none;
@@ -169,7 +169,7 @@ body .container .container-content .auth-side .login-form .input-group .btn-crea
 }
 
 body .container .container-content .auth-side .login-form .input-group .btn-login, body .container .container-content .auth-side .login-form .input-group .btn-create {
-  padding: 0.8rem;
+  padding: 0.6rem;
   border: none;
   outline: none;
   color: #fff;
