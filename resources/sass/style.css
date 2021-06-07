@@ -19,7 +19,8 @@ body .feather {
 }
 
 body .container {
-  background-color: #fff;
+  background: url("../images/login/Scattered-Forcefields.svg");
+  background-size: cover;
 }
 
 body .container .container-content .header {

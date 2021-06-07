@@ -19,7 +19,9 @@ body{
     }
 
     .container{
-        background-color: $body-bg;
+        background: url("../images/login/Scattered-Forcefields.svg");
+        // background-attachment: fixed;
+        background-size: cover;
 
         .container-content{
 
