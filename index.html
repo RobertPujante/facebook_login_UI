@@ -4,154 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Simply beautiful open source Log In User Interface">
-    <meta http-equiv="Content-Security-Policy: script-src 'self' https://fonts.gstatic.com">
-
-    <title>Login Design</title>
-    
-    <link rel="preload" href="plugins/jquery/dist/jquery.min.js" as="script">
-    <link rel="preload" href="plugins/feather-icons/dist/feather.min.js" as="script">
-    <link rel="preload" href="resources/js/script.js" as="script">
+    <title>Facebook - Neumorphism</title>
 
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" as="style">
     <link rel="preload" href="resources/sass/style.css" as="style">
 
-    <link rel="preload" href="resources/images/design/card-with-background.png" as="image">
-    <link rel="preload" href="resources/images/design/card.png" as="image">
-    <link rel="preload" href="resources/images/design/neumorphism.png" as="image">
-    <link rel="preload" href="resources/images/design/simple-with-icons.png" as="image">
-    <link rel="preload" href="resources/images/design/simple.png" as="image">
-    <link rel="preload" href="resources/images/design/split-screen-card.png" as="image">
-    <link rel="preload" href="resources/images/design/split-screen.png" as="image">
-
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" 
+        rel="stylesheet">
+
     <link rel="stylesheet" href="resources/sass/style.css">
 
     <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
 </head>
 <body>
-    <main class="container">
-        <section class="container-content">
-
-            <div class="header">
-                <h2>Login Form Designs</h2>
-            </div>
-
-            <div class="preview-container">
-                <div class="card">
-                    <a href="simple.html" 
-                        target="_blank" 
-                        rel="noopenner"
-                        class="card-image-preview">
-                        <img src="resources/images/design/simple.png" 
-                        alt="Simple Login">
-                    </a>
-                    <div class="card-details">
-                        <span>Simple login</span>
-                    </div>
+    <div class="container">
+        <main class="container-content">
+            <div class="auth-side"> 
+                <div class="logo-brand">
+                    <img src="resources/images/logo/facebook.svg" alt="facebook" width="300" height="105" id="logo">
                 </div>
 
-                <div class="card">
-                    <a href="simple-with-icons.html" 
-                        target="_blank" 
-                        rel="noopenner"
-                        class="card-image-preview">
-                        <img src="resources/images/design/simple-with-icons.png" 
-                        alt="Simple with icons login">
-                    </a>
-                    <div class="card-details">
-                        <span>Simple with icons login</span>
+                <form action="#" method="post" id="login-form" class="login-form">
+                    <div class="input-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" name="email" id="email" class="form-control" autocomplete="off">
+                        <span class="invalid-feedback hidden" id="error-email">Email or Phone Number is required.</span>
                     </div>
-                </div>
+    
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" class="form-control" autocomplete="current-password">
+                        <span class="invalid-feedback hidden" id="error-password">Password is required.</span>
+                    </div>
 
-                <div class="card">
-                    <a href="card.html" 
-                        target="_blank" 
-                        rel="noopenner"
-                        class="card-image-preview">
-                        <img src="resources/images/design/card.png" 
-                        alt="Card login">
-                    </a>
-                    <div class="card-details">
-                        <span>Card login</span>
+                    <div class="forgot-password">
+                        <a href="#">Forgot Password?</a>
                     </div>
-                </div>
 
-                <div class="card">
-                    <a href="card-with-background.html" 
-                        target="_blank" 
-                        rel="noopenner"
-                        class="card-image-preview">
-                        <img src="resources/images/design/card-with-background.png" 
-                        alt="Card with background login">
-                    </a>
-                    <div class="card-details">
-                        <span>Card with background login</span>
+                    <div class="input-group">
+                        <button type="button" class="btn-login" id="btn-login">Log In</button>
                     </div>
-                </div>
 
-                <div class="card">
-                    <a href="split-screen-card.html" 
-                        target="_blank" 
-                        rel="noopenner"
-                        class="card-image-preview">
-                        <img src="resources/images/design/split-screen-card.png" 
-                        alt="Split screen card login">
-                    </a>
-                    <div class="card-details">
-                        <span>Split screen card login</span>
-                    </div>
-                </div>
+                    <span class="divider"></span>
 
-                <div class="card">
-                    <a href="split-screen.html" 
-                        target="_blank" 
-                        rel="noopenner"
-                        class="card-image-preview">
-                        <img src="resources/images/design/split-screen.png" 
-                        alt="Split screen login">
-                    </a>
-                    <div class="card-details">
-                        <span>Split screen login</span>
+                    <div class="input-group">
+                        <button type="button" class="btn-create">Create New Account</button>
                     </div>
-                </div>
 
-                <div class="card">
-                    <a href="neumorphism.html" 
-                        target="_blank" 
-                        rel="noopenner"
-                        class="card-image-preview">
-                        <img src="resources/images/design/neumorphism.png" 
-                        alt="Neumorphism login">
-                    </a>
-                    <div class="card-details">
-                        <span>Neumorphism login</span>
-                    </div>
-                </div>
+                </form>
 
-                <!-- <div class="card">
-                    <a href="glassmorphism.html" 
-                        target="_blank" 
-                        rel="noopenner"
-                        class="card-image-preview">
-                        <img src="resources/images/design/neumorphism.JPG" 
-                        alt="Glassmorphism login">
-                    </a>
-                    <div class="card-details">
-                        <span>Glassmorphism login</span>
-                    </div>
-                </div> -->
+                <p class="bottom-text"><a href="#" class="btn-create-page">Create a Page</a> for a celebrity, band or business.</p>
 
             </div>
-
-        </section>
-    </main>
-    <footer>
-        <p>© <span id="year"></span> | Robertson Morales</p>
-    </footer>
-
-    <script src="plugins/feather-icons/dist/feather.min.js"></script>
-    <script src="plugins/jquery/dist/jquery.min.js"></script>
-    <script src="resources/js/script.js"></script>
+        </main>
+    </div>
 </body>
 </html>

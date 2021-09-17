@@ -1,4 +1,41 @@
-@import 'variables';
+$font: 'Poppins', sans-serif;
+$p: 1.5rem;
+$p-input: .6rem;
+$m: 1.5rem;
+$primary: #1877f2;
+$secondary: #1877f2aa;
+$success: #42b72a;
+$body-bg: #fff; // #f0f2f5;
+
+$shadow: 0 6px 12px rgba(140,152,164,.075);
+$shadow-sm: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+$dropdown-shadow: 0 10px 40px 10px rgba(140,152,164,.175);
+$border: .0625rem solid rgba(231,234,243,.7);
+$radius: .75rem;
+
+// neumorphism
+$border-radius: 50px;
+$background: #eeeeee;
+$shadowActive: -7px -7px 20px 0px #fff9,
+    -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002,
+    4px 4px 5px 0px #0001,
+    inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001,
+    inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001 !important;
+$shadowInactive: 0px 0px 0px 0px #fff9,
+    0px 0px 0px 0px #fff9,
+    0px 0px 0px 0px #0001,
+    0px 0px 0px 0px #0001,
+    inset -7px -7px 20px 0px #fff9,
+    inset -4px -4px 5px 0px #fff9,
+    inset 7px 7px 20px 0px #0003,
+    inset 4px 4px 5px 0px #0001 !important;
+
+// glass morphism
+$shadowGlass: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+$backgroundGlass: rgba(255, 255, 255, 0.5);
 
 *{
     padding: 0;
@@ -13,73 +50,189 @@ body{
     font-family: $font !important;
     transition: all .4s ease;
 
-    .feather{
-        width: 18px;
-        height: 18px;
-    }
-
     .container{
-        background: url("../images/login/Scattered-Forcefields.svg");
-        // background-attachment: fixed;
-        background-size: cover;
-
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        background-color: $background;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
         .container-content{
+            border-radius: $border-radius;
+            max-width: 100%;
+            animation-name: grow;
+            animation-duration: 1.4s;
+    
+            .auth-side{
+                display: flex;
+                flex-direction: column;
+                padding: 2rem;
+                background: transparent;
 
-            .header{
-                padding: $p;
-                text-align: center;
-
-                h2{
-                    font-weight: 600;
-                    color: #333;
+                .logo-brand{
+                    text-align: center;
+                    animation-name: grow;
+                    animation-duration: 1.2s;
+    
+                    .brand{
+                        color: $primary !important;
+                    }
                 }
-            }
 
-            .preview-container{
-                padding: $p;
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                grid-row-gap: 30px;
+                .login-form{
+                    .input-group{
+                        margin-bottom: $m;                        
+                        display: flex;
+                        flex-direction: column;
 
-                .card{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-
-                    .card-image-preview{
-                        margin-bottom: 20px;
-                        overflow: hidden;
-                        box-shadow: 1px 1px 10px rgba(0, 0, 0, .3);
-                        border-radius: 15px;
-                        transition: all .8s ease;
-
-                        img{
-                            width: 400px;
-                            height: 100%;
-                            object-fit: cover;
+                        label{
+                            font-size: .9em;
+                            margin-bottom: 5px;
+                            color: #777;
+                        }
+        
+                        .form-control{
+                            font-family: $font;
+                            padding: $p-input;
+                            font-size: .9em;
+                            outline: none;
+                            border-radius: 5px;
+                            border: none;
+                            box-shadow: $shadowInactive;
+                            transition: all .4s ease;
+                            background: transparent;
                         }
 
-                        &:hover{
-                            transform: translateY(-3%);
-                            box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
+                        .invalid-feedback{
+                            margin-top: 3px;
+                            color: red;
+                            font-size: .9em;
+                        }
 
-                            img{
-                                opacity: .8;
+                        &:first-child{
+                            animation-name: grow_right;
+                            animation-duration: 1.4s;
+                        }
+
+                        &:nth-child(2){
+                            animation-name: grow_right;
+                            animation-duration: 1.6s;
+                        }
+
+                        .btn-login{
+                            box-shadow: $shadowActive;
+                            color: $primary;
+                            animation-name: grow_right;
+                            animation-duration: 1.8s;
+    
+                            &:active{
+                                box-shadow: $shadowInactive;
+                            }
+                        }
+
+                        .btn-create{
+                            box-shadow: $shadowActive;
+                            color: $success;
+                            animation-name: grow_right;
+                            animation-duration: 2s;
+
+                            &:active{                                
+                                box-shadow: $shadowInactive;
+                            }
+                        }
+
+                        .btn-login, .btn-create{
+                            padding: $p-input;
+                            border: none;
+                            outline: none;
+                            font-weight: 600;
+                            border-radius: 5px;
+                            font-family: $font;
+                            font-size: 1em;
+                            cursor: pointer;
+                            transition: all .4s ease;                            
+                        }
+
+                        &:last-child{
+                            margin-bottom: 0;
+                        }
+                    }       
+                    
+                    .forgot-password{
+                        text-align: left;
+                        margin-bottom: $m;
+                        animation-name: grow_right;
+                        animation-duration: 1.6s;
+
+                        a{
+                            text-decoration: none;
+                            font-size: .9em;
+                            color: $primary;
+
+                            &:hover{
+                                text-decoration: underline;
                             }
                         }
                     }
+                    
+                    .divider{
+                        border: 1px solid #e6e6e6;
+                        display: flex;
+                        margin-bottom: $m;
+                    }
+                }
 
-                    .card-details{
-                        text-align: center;
+                .bottom-text{
+                    font-size: .9em;
+                    padding: $p;
+                    text-align: center;
+
+                    .btn-create-page{
+                        text-decoration: none;
+                        font-weight: 600;
+                        color: $primary;
+
+                        &:hover{
+                            text-decoration: underline;
+                        }
                     }
                 }
             }
         }
+
+        .hidden{
+            display: none !important;
+        }
+
+        .invalid{
+            border: 1px solid red !important;
+        }
+    }
+}
+
+@keyframes grow{
+    from{
+        transform: translateX(-100%);
+        opacity: 0; 
     }
 
-    footer{
-        text-align: center;
-        color: #888;
-        font-size: .9em;
+    to{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes grow_right{
+    from{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
     }
 }
